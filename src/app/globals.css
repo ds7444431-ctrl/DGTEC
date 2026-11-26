@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; }
+body { background: #050b1a; color: #fff; font-family: Inter, system-ui, sans-serif; }
+.bg-grid { background-image: radial-gradient(rgba(30,107,255,.18) 1px, transparent 1px); background-size: 28px 28px; }
+.btn-glow { background: linear-gradient(110deg,#1e6bff,#4fa3ff,#1e6bff); background-size: 200% 100%; }
+.btn-glow:hover { animation: shine 1.8s linear infinite; box-shadow: 0 0 25px rgba(30,107,255,.6); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
